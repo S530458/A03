@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QUnit Test Results</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.0.1.css">
+</head>
+
+<body>
+  <div w3-include-html="views/Guess.html"></div>
+  <script>
+    w3.includeHTML();
+  </script>
+  <!-- the qunit div displays testing results -->
+  <div id="qunit"></div>
+  <!-- the qunit-fixture div is for tests affecting the DOM -->
+  <div id="qunit-fixture"></div>
+  <br/>
+  <p>Reminder: Include all dependencies in the html file (in order). </p>
+  <!-- References:  https://www.sitepoint.com/getting-started-qunit/ -->
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://code.jquery.com/qunit/qunit-2.0.1.js"></script>
+  <script src="../assets/js/Guess.js"></script>
+  <script src="test.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ash</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/A01.css">	
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">A02 Atkuri</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a class="navbar-brand" href="home">Home</a></li>
+                        <li><a class="navbar-brand" href="About">About</a></li>		
+                        <li><a class="navbar-brand" href="Guess">Guess</a></li>
+                        <li><a class="navbar-brand" href="contact">Contact</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle navbar-brand" data-toggle="dropdown" href="#">Guestbook
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="guestbook">Guestbook</a></li>
+                                    <li><a href="new-entry">New-entry</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    <div class="container">
+        <article>
+            <section>
+                <table style="width:550px;border:0;">
+                    <th>
+                        <td>
+                            <h1> Contact Us</h1>
+                        </td>
+                    </th>
+                    <br><br>
+                    <aside>
+                        <form method="post" action="contact">
+                            <tr>
+                                <td>
+                                    <label>Name<label id="requiredFields">*</label>:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" name="name" maxlength="60" style="width:250px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Email address<label id="requiredFields">*</label>:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="email" name="email" maxlength="90" style="width:250px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Comments <label id="requiredFields">*</label>:</label>
+                                </td>
+                                <td>
+                                    <textarea rows="7" cols="40" style="width:350px;" id="comments" name="comments"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="btn btn-primary" id="submit_contact" type="submit" value="Submit" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <label id="requiredFields">*</label> required fields.
+                                </td>
+                            </tr>
+                        </form>
+                    </aside>
+                </table>
+            </section>
+        </article>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="row well">
+        <footer>
+            Copyright 2017. All rights reserved.
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+</body>
+</html>

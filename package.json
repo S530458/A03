@@ -1,0 +1,20 @@
+{
+    "name": "A03",
+    "version": "0.0.1",
+    "description": "My Web Page",
+    "main": "server.js",
+    "dependencies": {
+        "express": "latest",
+        "morgan": "latest",
+        "body-parser": "latest",
+        "ejs": "latest",
+        "mailgun-js": "latest"
+    },
+    "author": "Ashok Atkuri",
+    "homepage": "https://bitbucket.org/S530458/a03",
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/S530458/a03"
+    },
+    "license": "Apache-2.0"
+}

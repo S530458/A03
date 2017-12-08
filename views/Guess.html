@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ash</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/A01.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">A02 Atkuri</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a class="navbar-brand" href="home">Home</a></li>
+                        <li><a class="navbar-brand" href="About">About</a></li>		
+                        <li><a class="navbar-brand" href="Guess">Guess</a></li>
+                        <li><a class="navbar-brand" href="contact">Contact</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle navbar-brand" data-toggle="dropdown" href="#">Guestbook
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="guestbook">Guestbook</a></li>
+                                    <li><a href="new-entry">New-entry</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-12 col-xs-6">
+                <CENTER class="sideHeaders">
+                    <H2>Guessing Game</H2>
+                    <p>
+                        <font>
+                            <b><h3>The object of this game is to guess the same number that the computer has guessed. 
+                                 The number will in between 1 to 100.</h3>
+                            </b>
+                        </font>
+                    </p>
+                    <FORM id="guessForm" onSubmit="GuessNum(); return false">
+                        Name:
+                        <INPUT TYPE="text" id="playerName" SIZE= 15>
+                        <br />&nbsp;&nbsp;&nbsp;
+                        <br />&nbsp;&nbsp;&nbsp; Your Guess:
+                        <INPUT TYPE="text" id="guess" NAME="guess" SIZE = 5> &nbsp;&nbsp;&nbsp;
+                        <INPUT class="btn btn-primary" TYPE="button" VALUE="     Guess...   " onClick="GuessNum(guess.value);"> &nbsp;&nbsp;&nbsp;
+                        <INPUT class="btn btn-primary" TYPE="button" VALUE="  GiveUp  " onClick="GiveUp();">
+                        <br />
+                        <br />
+                        <br />
+                        <CENTER>
+                            No of Guesses:
+                            <INPUT class="" TYPE="text" id="guesses" NAME="guesses" SIZE= 10> &nbsp;&nbsp;&nbsp; Hint:
+                            <INPUT TYPE="text" id="result" NAME="result" SIZE= 10>
+                            <br />
+                            <br /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                            <INPUT class="btn btn-primary" TYPE="button" VALUE="  Reset  " onClick="Reset();">
+                            <br />
+                            <p id="gameResult"></p>
+                        </CENTER>
+                    </FORM>
+                </CENTER>
+            </div>
+        </div>
+    </div>
+
+    <div class="row well">
+        <footer>
+            Copyright 2017. All rights reserved.
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/Guess.js"></script>
+</body>
+
+</html>
